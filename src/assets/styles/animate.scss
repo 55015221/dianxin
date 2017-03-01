@@ -1,0 +1,105 @@
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  &.infinite {
+    animation-iteration-count: infinite;
+  }
+  &.hinge {
+    animation-duration: 2s;
+  }
+  &.delay {
+    animation-delay: 1s;
+  }
+  &.slideLeftToRight,
+  &.slideRightToLeft,
+  &.bounceIn,
+  &.bounceOut, {
+    animation-duration: 300ms;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+  80% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+}
+
+@keyframes bounceOut {
+  20% {
+    transform: scale3d(.9, .9, .9);
+  }
+  50%,
+  55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+.bounceOut {
+  animation-name: bounceOut;
+}
+
+@keyframes slideLeftToRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideLeftToRight {
+  animation-name: slideLeftToRight;
+}
+
+@keyframes slideRightToLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.slideRightToLeft {
+  animation-name: slideRightToLeft;
+}
+
+// vue transition
+.slide-left-enter,
+.slide-right-leave-active {
+  transform: translate(100%, 0);
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+  transform: translate(-100%, 0);
+}
+
+.slide-enter-active {
+  animation: slideLeftToRight .3s;
+}
+
+.slide-leave-active {
+  animation: slideRightToLeft .3s;
+}
