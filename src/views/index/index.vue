@@ -1,6 +1,6 @@
 <template>
 
-<div class="home">
+<div class="index">
     <div id="content_2_0" class="content-template-wrapper content-half-wrapper content0-wrapper">
         <div class="content-template content0">
             <div class="content0-img" id="content_2_0-imgWrapper" style="transform: translate(0px, 0px); opacity: 1;">
@@ -25,46 +25,22 @@
 export default {
     data () {
         return {
-            advertisement: '',
-            markets: [],
-            goods: [],
         }
     },
     created () {
-        console.log("created")
-        this.fetchData()
+        console.log("created index")
     },
     mounted () {
-        console.log("mounted")
-        console.log(this.advertisement)
-    },
-    watch: {
-        // 如果路由有变化，会再次执行该方法
-        '$route': 'fetchData'
+        console.log("mounted index")
     },
     methods:{
-        //  请求全部数据
-        fetchData () {
-            console.log("fetchData")
-            const $self = this
-            $self.$http.get(window.configPath + 'home.json?'+ Math.random()).then(response => {
-                if (response.body.code === 0) {
-                  this.advertisement = response.body.data.advertisement
-                  $self.markets = response.body.data.markets
-                  $self.goods = response.body.data.goods
-                  console.log(this.advertisement)
-                  this.$parent.loading = true
-                }
-            }, response => {
-                console.log('请求错误！')
-            })
-        }
+
     }
 }
 </script>
 
 <style>
-.home {
+.index {
 
 }
 .content-template-wrapper {

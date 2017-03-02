@@ -1,13 +1,13 @@
 <template>
 
-    <div class="loader"></div>
+    <div class="loader" :show="loading"></div>
 
 </template>
 
 
 <script>
 export default {
-    name: "app-loading",
+    name: "app-loader",
     props:[
         'loading'
     ]

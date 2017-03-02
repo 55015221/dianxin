@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-import Hello from '@/components/Hello'
 
-
-import Home from '@/views/home/index.vue'
-import About from '@/views/about/index.vue'
+import Index from '@/views/index/'
+import About from '@/views/about/'
+import Service from '@/views/service/'
+import Product from '@/views/product/'
+import Contact from '@/views/contact/'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -26,9 +27,13 @@ const router = new VueRouter({
     //设置 链接激活时使用的 CSS 类名。默认值可以通过路由的构造选项 linkActiveClass 来全局配置。
     linkActiveClass: 'router-link-active',
     routes: [
-        { path: '/', redirect: '/home' },   //默认页面
-        { path: '/home', name: 'home', component: Home },
-        { path: '/about', name: 'about', component: About }
+        { path: '/', redirect: '/index' },   //默认页面
+        { path: '/index', name: 'index', component: Index },
+        { path: '/about', name: 'about', component: About },
+        { path: '/service', name: 'service', component: Service },
+        { path: '/product', name: 'product', component: Product },
+        { path: '/product/:id', name: 'product', component: Product },
+        { path: '/contact', name: 'contact', component: Contact }
     ]
 })
 

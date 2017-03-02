@@ -24,16 +24,14 @@ export default {
         }
     },
     created () {
-        console.log("created")
+        console.log("created about")
     },
     mounted () {
-        console.log("mounted")
-        this.fetchData()
-        console.log(this.advertisement)
-    },
-    watch: {
-        // 如果路由有变化，会再次执行该方法
-        '$route': 'fetchData'
+        console.log("mounted about")
+        // 代码保证 this.$el 在 document 中
+        this.$nextTick(function () {
+            this.fetchData()
+        })
     },
     methods:{
         //  请求全部数据
@@ -41,13 +39,12 @@ export default {
             console.log("fetchData")
             const $self = this
             $self.$http.get(window.configPath + 'home.json?'+ Math.random()).then(response => {
+                console.log(response)
                 if (response.body.code === 0) {
                   this.advertisement = response.body.data.advertisement
                   $self.markets = response.body.data.markets
                   $self.goods = response.body.data.goods
-                  console.log($self.$parent.loading)
                   $self.$parent.loading = false
-
                 }
             }, response => {
                 console.log('请求错误！')

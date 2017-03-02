@@ -1,26 +1,42 @@
 <template>
+
     <div id="app">
-        <app-loader :loading="loading"></app-loader>
-        <app-header></app-header>
+
+        <!--header 头部-->
+        <keep-alive>
+            <app-loader :loading="loading"></app-loader>
+        </keep-alive>
+        <keep-alive>
+            <app-header></app-header>
+        </keep-alive>
+
+        <!--wrapper 主体-->
         <div class="wrapper">
             <transition
                 name="custom-classes-transition"
-                enter-active-class="animated fadeInUp"
+                enter-class=""
+                enter-active-class="animated fadeIn"
+                leave-class=""
                 leave-active-class=""
                 >
-                <keep-alive>
-                    <router-view></router-view>
-                </keep-alive>
+                <router-view></router-view>
             </transition>
         </div>
-        <app-footer></app-footer>
+
+        <!--header 底部-->
+        <keep-alive>
+            <app-footer></app-footer>
+        </keep-alive>
+
     </div>
+
 </template>
 
 <script>
 import Header from '@/views/layout/header.vue'
 import Footer from '@/views/layout/footer.vue'
 import Loader from '@/views/layout/loader.vue'
+
 export default {
   name: 'app',
   data () {
@@ -32,6 +48,12 @@ export default {
     "app-header": Header,
     "app-footer": Footer,
     "app-loader": Loader
+  },
+  created () {
+      console.log("created app")
+  },
+  mounted () {
+      console.log("mounted app")
   }
 }
 </script>
