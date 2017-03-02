@@ -30,7 +30,8 @@ export default {
 .header {
     height:64px;
     line-height:18px;
-    /*background:rgba(51,51,51,.95)*/
+    background:rgba(51,51,51,.95);
+    box-shadow: 0 5px 8px rgba(0,0,0,.15);
 }
 
 .logo {

@@ -26,29 +26,33 @@ export default {
 
 <style>
 
-.menu {}
+.menu {
+}
 .menu ul {
     display: block;
     line-height: 62px;
     float: right;
     margin-right: 4%;
+    
 }
 .menu ul li {
     position:relative;
     top: 1px;
+    margin-top: -1px;
     color:#fff;
     float: left;
     text-align: center;
     cursor:pointer;
     width: 100px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
-.menu .router-link-active {
+.menu .router-link-active,
+.menu ul li:hover {
   color:#34aff3;
   border-bottom: 2px solid #019bf0;
   margin-top: -1px;
-}
-.menu ul li:hover{
-  color: #34aff3;
 }
 
 </style>

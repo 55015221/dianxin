@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
+import Scrollspy from 'vue-scrollspy'
 
 import Index from '@/views/index/'
 import About from '@/views/about/'
@@ -10,6 +11,8 @@ import Contact from '@/views/contact/'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
+
+Vue.use(Scrollspy)
 
 //  配置前端请求路径
 const configPath = '/static/mock/'
