@@ -62,13 +62,7 @@ export default {
 #app {
 
 }
-.wrapper {
-    display: block;
-    width:980px;
-    margin:0 auto;
-    height:100%;
-    min-height:650px;
-    clear:both;
-}
+
+
 
 </style>
