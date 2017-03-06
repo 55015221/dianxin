@@ -2,11 +2,11 @@
 
     <div id="app">
 
-        <!--header 头部
+        <!--header 头部-->
         <keep-alive>
             <app-header></app-header>
         </keep-alive>
-        -->
+        
 
         <!--wrapper 主体-->
         <div class="wrapper">
@@ -21,11 +21,11 @@
             </transition>
         </div>
 
-        <!--header 底部
+        <!--header 底部-->
         <keep-alive>
             <app-footer></app-footer>
         </keep-alive>
-        -->
+        
 
     </div>
 
@@ -61,7 +61,14 @@ export default {
 #app {
 
 }
+.uk-container{
+  max-width: 1200px;
+  padding: 0 35px;
+}
 
+.template-wrapper {
+  padding: 120px 0;
+}
 
 
 </style>

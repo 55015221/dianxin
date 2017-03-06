@@ -2,12 +2,13 @@
 
     <div class="menu">
         <ul>
-            <!--
+            <!---->
             <router-link to="/index" tag="li">导航一</router-link>
             <router-link to="/about" tag="li">导航二</router-link>
             <router-link to="/service" tag="li">导航三</router-link>
             <router-link to="/product" tag="li">导航四</router-link>
-            -->
+            <router-link to="/questions" tag="li">导航四</router-link>
+            <router-link to="/solution" tag="li">导航四</router-link>
             <router-link to="/contact" tag="li">导航五</router-link>
         </ul>
     </div>
@@ -41,7 +42,7 @@ export default {
     position:relative;
     top: 1px;
     margin-top: -1px;
-    color:#fff;
+    color:#444;
     float: left;
     text-align: center;
     cursor:pointer;

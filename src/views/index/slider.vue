@@ -3,7 +3,7 @@
 <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">
     <ul class="uk-slideshow">
         <li v-for="(item,index) in resourceData">
-            <img :src="item.imageUrl" width="980" height="200" :alt="item.label">
+            <img :src="item.imageUrl" width="980" height="300" :alt="item.label">
         </li>
     </ul>
     <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>

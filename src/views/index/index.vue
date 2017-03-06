@@ -22,7 +22,7 @@
 
 <script>
 
-import slider from '@/components/slider'
+import slider from './slider.vue'
 
 
 export default {

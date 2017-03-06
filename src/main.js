@@ -6,6 +6,7 @@ import router from './router'
 
 //加载全局css
 import './assets/styles/base.scss'
+import './untils'
 
 /* eslint-disable no-new */
 new Vue({
