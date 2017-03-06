@@ -2,7 +2,7 @@
 
 <div class="uk-grid" data-uk-grid-margin="">
     <div class="uk-width-medium-1-1" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300}" v-for="(item, index) in resourceData">
-        <div class="uk-panel uk-panel-box uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-scale-up">
+        <div class="uk-panel uk-panel-box">
             <h3 class="uk-panel-title">{{ item.title }}</h3>
             <p>{{ item.content }}</p>
         </div>
@@ -39,9 +39,23 @@ export default {
         return {
             resourceData: resourceData
         }
+    },
+    created () {
+        console.log("created contact")
+    },
+    mounted () {
+        console.log("mounted contact")
+        $("h3").html("uk.scrollspy.inview");
+        $("p").html("uk.scrollspy.outview content");
+        //$('[data-uk-scrollspy]').on('uk.scrollspy.inview', function(){
+            // custom code...
+          //  console.log("uk.scrollspy.outview");
+        //})
     }
 
 }
+
+
 
 </script>
 

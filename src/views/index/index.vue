@@ -23,9 +23,6 @@
 <script>
 
 import slider from '@/components/slider'
-import content0 from '@/components/content0'
-import service from '@/components/service'
-import questions from '@/components/questions'
 
 
 export default {
@@ -34,10 +31,7 @@ export default {
         }
     },
     components: {
-        slider: slider,
-        content0: content0,
-        questions: questions,
-        service: service
+        slider: slider
     },
     created () {
         console.log("created index")
@@ -55,7 +49,5 @@ export default {
 .index {
 
 }
-
-
 
 </style>

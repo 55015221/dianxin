@@ -2,13 +2,11 @@
 
     <div id="app">
 
-        <!--header 头部-->
-        <keep-alive>
-            <app-loader :loading="loading"></app-loader>
-        </keep-alive>
+        <!--header 头部
         <keep-alive>
             <app-header></app-header>
         </keep-alive>
+        -->
 
         <!--wrapper 主体-->
         <div class="wrapper">
@@ -23,10 +21,11 @@
             </transition>
         </div>
 
-        <!--header 底部-->
+        <!--header 底部
         <keep-alive>
             <app-footer></app-footer>
         </keep-alive>
+        -->
 
     </div>
 
