@@ -2,13 +2,13 @@
 
     <div class="menu">
         <ul>
-            <router-link to="/index" tag="li">导航一</router-link>
-            <router-link to="/about" tag="li">导航二</router-link>
-            <router-link to="/service" tag="li">导航三</router-link>
-            <router-link to="/product" tag="li">导航四</router-link>
+            <router-link to="/index" tag="li">首页</router-link>
+            <router-link to="/about" tag="li">关于我们</router-link>
+            <router-link to="/service" tag="li">业务合作</router-link>
+            <router-link to="/product" tag="li">产品与服务</router-link>
             <router-link to="/questions" tag="li">导航四</router-link>
-            <router-link to="/solution" tag="li">导航四</router-link>
-            <router-link to="/contact" tag="li">导航五</router-link>
+            <router-link to="/solution" tag="li">解决方案</router-link>
+            <router-link to="/contact" tag="li">联系我们</router-link>
         </ul>
     </div>
 

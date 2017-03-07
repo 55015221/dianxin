@@ -1,11 +1,14 @@
 <template v-if="data">
-
-    <div class="uk-grid">
+    
+    <div class="uk-grid" data-uk-grid-margin 
+        data-uk-scrollspy="{cls:'uk-animation-slide-right uk-invisible', target:'> div > .uk-panel', delay:300}"
+    >
         <div class="uk-width-medium-1-3" v-for="(item, index) in data">
-            <div class="uk-panel uk-panel-box">
+            <div class="uk-panel uk-panel-box uk-invisible">
                 <div class="uk-panel-teaser">
                     <img :src="item.imageUrl" width="800" height="280" alt="">
                 </div>
+                <h3>{{ item.title }}</h3>
                 <p>{{ item.content }}</p>
             </div>
         </div>
@@ -18,14 +21,17 @@
 
 const data = [
     {
+        title: '',
         imageUrl: 'static/images/placeholder_400x250.svg',
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     },
     {
+        title: '',
         imageUrl: 'static/images/placeholder_400x250.svg',
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     },
     {
+        title: '',
         imageUrl: 'static/images/placeholder_400x250.svg',
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     }

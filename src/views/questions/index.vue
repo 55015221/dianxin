@@ -9,7 +9,7 @@
         <div class="uk-container uk-container-center">
 
             <div class="uk-grid" data-uk-grid-margin="">
-                <div class="uk-width-medium-1-1" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false, delay:300}" :data-index="index" v-for="(item, index) in data">
+                <div class="uk-width-medium-1-1" data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: false, delay:300}" v-for="(item, index) in data">
                     
                         <h3 class="uk-panel-title">{{ item.title }}</h3>
                         <p>{{ item.content }}</p>

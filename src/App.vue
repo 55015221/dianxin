@@ -21,11 +21,11 @@
             </transition>
         </div>
 
-        <!--header 底部
+        <!--header 底部-->
         <keep-alive>
             <app-footer></app-footer>
         </keep-alive>
-        -->
+        
 
     </div>
 
@@ -64,6 +64,9 @@ export default {
 .uk-container{
   max-width: 1200px;
   padding: 0 35px;
+}
+.wrapper{
+  min-height: 650px;
 }
 
 .template-wrapper {
