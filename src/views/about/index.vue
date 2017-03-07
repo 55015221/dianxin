@@ -1,33 +1,36 @@
 <template>
-<div>  
-    <div style="background:#3dc0f1;height:300px;"></div>
-    <div class="template-wrapper" id="about">
-        <div class="uk-container uk-container-center">
-            <div class="uk-grid">
-                <div class="uk-width-medium-1-4">
-                    <ul class="uk-nav uk-nav-side" data-uk-nav="">
-                        <li><a href="">菜单项 </a></li>
-                        <li><a href="">菜单项</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="">菜单项</a></li>
-                    </ul>
-                </div>
+    <div id="about">
+        <!--banner-->
+        <banner style="height:200px;background:#3dc0f1;"></banner>
 
-                <div class="uk-width-medium-3-4">
-                    <article class="uk-article">
-                        <h2 class="uk-article-title">关于我们</h2>
-                        <p class="uk-article-meta"></p>
-                        <p class="uk-article-lead"></p>
-                        
-                        <hr class="uk-article-divider">
-                        <p v-for="content in data">{{ content }}</p>
-                    </article>
+        <!--content-->
+        <div class="template-wrapper">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-width-medium-1-4">
+                        <ul class="uk-nav uk-nav-side" data-uk-nav="">
+                            <li><a href="">菜单项 </a></li>
+                            <li><a href="">菜单项</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="">菜单项</a></li>
+                        </ul>
+                    </div>
 
+                    <div class="uk-width-medium-3-4">
+                        <article class="uk-article">
+                            <h2 class="uk-article-title">关于我们</h2>
+                            <p class="uk-article-meta"></p>
+                            <p class="uk-article-lead"></p>
+
+                            <hr class="uk-article-divider">
+                            <p v-for="content in data">{{ content }}</p>
+                        </article>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </template>
 
 
@@ -42,12 +45,16 @@ const data = [
 ]
 
 
+import banner from '@/components/content/banner'
 
 export default {
     data () {
         return {
             data: data
         }
+    },
+    components: {
+        banner: banner
     },
     created () {
         console.log("created about")

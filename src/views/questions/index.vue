@@ -1,8 +1,11 @@
 <template>
 
-<div>
-    <div style="background:#3dc0f1;height:300px;"></div>
-    <div class="template-wrapper" id="questions">
+<div id="questions">
+    <!--banner-->
+    <banner style="background:#32384f;height:300px;"></banner>
+
+    <!--content-->
+    <div class="template-wrapper" >
         <div class="uk-container uk-container-center">
 
             <div class="uk-grid" data-uk-grid-margin="">
@@ -56,12 +59,16 @@ const data = [
     }
 ]
 
+import banner from '@/components/content/banner'
 export default {
     name: 'questions',
     data () {
         return {
             data: data
         }
+    },
+    components: {
+        banner: banner
     },
     created () {
         console.log("created questions")

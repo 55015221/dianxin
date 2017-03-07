@@ -1,25 +1,29 @@
 <template>
 
-<div class="product">
-    
+    <div class="product">
 
-</div>
+        <!--banner-->
+        <banner style="height:200px;background:#e0f3f6;"></banner>
+
+
+    </div>
 
 </template>
 
 
 <script>
 
+import banner from '@/components/content/banner'
 export default {
     data () {
         return {
         }
     },
     components: {
+        banner: banner
     },
     created () {
         console.log("created product")
-        this.productId = this.$route.params.id
     },
     mounted () {
         console.log("mounted product")

@@ -2,7 +2,6 @@
 
     <div class="menu">
         <ul>
-            <!---->
             <router-link to="/index" tag="li">导航一</router-link>
             <router-link to="/about" tag="li">导航二</router-link>
             <router-link to="/service" tag="li">导航三</router-link>
@@ -41,8 +40,11 @@ export default {
 .menu ul li {
     position:relative;
     top: 1px;
+    font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    font-size:15px;
+    font-weight:400;
     margin-top: -1px;
-    color:#444;
+    color:#333;
     float: left;
     text-align: center;
     cursor:pointer;
@@ -53,8 +55,8 @@ export default {
 }
 .menu .router-link-active,
 .menu ul li:hover {
-  color:#34aff3;
-  border-bottom: 2px solid #019bf0;
+  color:#108ee9;
+  border-bottom: 2px solid #108ee9;
   margin-top: -1px;
 }
 

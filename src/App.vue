@@ -6,7 +6,7 @@
         <keep-alive>
             <app-header></app-header>
         </keep-alive>
-        
+
 
         <!--wrapper 主体-->
         <div class="wrapper">
@@ -21,11 +21,11 @@
             </transition>
         </div>
 
-        <!--header 底部-->
+        <!--header 底部
         <keep-alive>
             <app-footer></app-footer>
         </keep-alive>
-        
+        -->
 
     </div>
 
