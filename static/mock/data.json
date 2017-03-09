@@ -4,7 +4,6 @@
   "data":{
     "menuList":[
       {"label": "导航一", "link": "/index"},
-      {"label": "导航二", "link": "/about"},
       {"label": "导航三", "link": "/service"}
     ],
     "menuList1":[
@@ -15,6 +14,23 @@
       {"label": "客户问答", "link": "/questions"},
       {"label": "解决方案", "link": "/solution"},
       {"label": "联系我们", "link": "/contact"}
+    ],
+    "slider":[
+      {
+        "label": "",
+        "imageUrl": "http://www.getuikit.net/docs/images/placeholder_800x400_1.jpg",
+        "href": ""
+      },
+      {
+        "label": "",
+        "imageUrl": "http://www.getuikit.net/docs/images/placeholder_800x400_2.jpg",
+        "href": ""
+      },
+      {
+        "label": "",
+        "imageUrl": "http://www.getuikit.net/docs/images/placeholder_800x400_3.jpg",
+        "href": ""
+      }
     ],
     "product": [
       {

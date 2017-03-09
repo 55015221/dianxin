@@ -79,6 +79,20 @@ const actions = {
         }, 500)
         return response.data.questions
     },
+    /**
+     * 获取幻灯片数据
+     */
+    getSlider({ commit }, payload){
+        commit(types.GET_CONTACT_PENDING)
+        setTimeout(function () {
+            if (response.code === 1000) {
+                commit(types.GET_CONTACT_SUCCESS, response.data.slider)
+            } else {
+                commit(types.GET_CONTACT_FAILURE)
+            }
+        }, 500)
+        return response.data.slider
+    }
 
 }
 

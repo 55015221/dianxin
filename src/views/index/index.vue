@@ -2,7 +2,7 @@
 
 <div class="index">
 
-    <!--<slider></slider>-->
+    <slider></slider>
 
 
     <!--content-->

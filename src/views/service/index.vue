@@ -1,7 +1,7 @@
 <template>
 
 <div class="service">
-
+    百度一下
 </div>
 
 </template>
@@ -15,6 +15,7 @@ export default {
         }
     },
     components: {
+
     },
     created () {
         console.log("created service")
