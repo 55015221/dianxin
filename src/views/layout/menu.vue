@@ -2,13 +2,9 @@
 
     <div class="menu">
         <ul>
-            <router-link to="/index" tag="li">首页</router-link>
-            <router-link to="/about" tag="li">关于我们</router-link>
-            <router-link to="/service" tag="li">业务合作</router-link>
-            <router-link to="/product" tag="li">产品与服务</router-link>
-            <router-link to="/questions" tag="li">导航四</router-link>
-            <router-link to="/solution" tag="li">解决方案</router-link>
-            <router-link to="/contact" tag="li">联系我们</router-link>
+            <template v-for="(item, index) in menuList">
+                <router-link :to="item.link" tag="li">{{ item.label }}</router-link>
+            </template>
         </ul>
     </div>
 
@@ -17,10 +13,28 @@
 
 <script>
 
+import { mapState } from 'vuex'
+
 export default {
     name: "app-menu",
     data () {
         return {
+           menuList:{}
+        }
+    },
+    created () {
+        console.log("created menu")
+        this.$store.dispatch('getMenuList',{}).then((res) => {
+            this.menuList = {...this.menuList, ...res}
+        })
+    },
+    computed () {
+        console.log("computed menu")
+        return {
+            ...mapState({
+                menuList: state => state.module.menuList,
+                loading: state => state.module.loading,
+            })
         }
     }
 }

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 
+//页面模块
 import Index from '@/views/index/'
 import About from '@/views/about/'
 import Service from '@/views/service/'
@@ -15,8 +16,8 @@ Vue.use(VueResource)
 
 
 //  配置前端请求路径
-const configPath = '/static/mock/'
-window.configPath = configPath
+const mockPath = '/static/mock/'
+window.mockPath = mockPath
 
 //
 Vue.http.options.headers = {

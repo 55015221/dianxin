@@ -19,23 +19,6 @@
 
 <script>
 
-const data = [
-    {
-        title: '',
-        imageUrl: 'static/images/placeholder_400x250.svg',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-    },
-    {
-        title: '',
-        imageUrl: 'static/images/placeholder_400x250.svg',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-    },
-    {
-        title: '',
-        imageUrl: 'static/images/placeholder_400x250.svg',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-    }
-]
 export default {
     name: 'panel',
     props: {

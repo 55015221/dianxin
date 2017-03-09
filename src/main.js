@@ -3,15 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 
 //加载全局css
 import './assets/styles/base.scss'
-import './untils'
 
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
     router,
+    store,
     template: '<App/>',
     components: {App}
 })

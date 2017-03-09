@@ -21,10 +21,10 @@
             </transition>
         </div>
 
-        <!--header 底部-->
+        <!--header 底部
         <keep-alive>
             <app-footer></app-footer>
-        </keep-alive>
+        </keep-alive>-->
         
 
     </div>

@@ -2,17 +2,11 @@
 
 <div class="index">
 
-    <slider></slider>
+    <!--<slider></slider>-->
 
 
     <!--content-->
-    <content0></content0>
-
-    <!--content-->
-    <service></service>
-
-
-    <questions></questions>
+    <content1></content1>
 
 
 </div>
@@ -23,6 +17,7 @@
 <script>
 
 import slider from './slider.vue'
+import content1 from '@/components/content/content1'
 
 
 export default {
@@ -31,6 +26,7 @@ export default {
         }
     },
     components: {
+        content1: content1,
         slider: slider
     },
     created () {
