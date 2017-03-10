@@ -3,39 +3,31 @@
 <div class="contact">
     
     <!--banner-->
-    <banner :style="record.background"></banner>
+    <banner :style="record.background">
+        <br><br><br><br>
+        <h1 class="uk-text-center">联系我们</h1>
+    </banner>
 
     <div class="template-wrapper">
-        <div class="uk-container uk-container-center">
-                <article class="uk-article">
-                    <h2 class="uk-article-title">联系我们</h2>
-                    <p class="uk-article-meta"></p>
-                    <p class="uk-article-lead"></p>
-
-                    <hr class="uk-article-divider">
-                    <div class="uk-grid" data-uk-grid-margin="">
-                        <div class="uk-width-medium-1-3">
-                            <div class="uk-panel uk-panel-space uk-panel-divider uk-panel-box uk-panel-box-secondary">
-                                <p>
-                                    <strong>{{ record.company }}</strong>
-                                    <br>地址：{{ record.address }}
-                                </p>
-                                <p>
-                                    <br>服务邮件：<a :href="'mailto:'+ record.serviceEmail">{{ record.serviceEmail }}</a>
-                                    <br>合作邮件：<a :href="'mailto:'+ record.cooperateEmail">{{ record.cooperateEmail }}</a>
-                                    <br>电话：{{ record.telephone }}
-                                    <br>手机：{{ record.mobile }}
-                                    <br>QQ：{{ record.qq }}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="uk-width-medium-1-1">
-                            <img :src="record.mapUrl">
-                        </div>
-                </div>
-            </article>
-
-        </div>
+        <article class="uk-container uk-container-center main-raised">
+            <div class="content">
+                <p>
+                    <h2>{{ record.company }}</h2>
+                    <br>地址：{{ record.address }}
+                </p>
+                <p>
+                    <br>服务邮件：<a :href="'mailto:'+ record.serviceEmail">{{ record.serviceEmail }}</a>
+                    <br>合作邮件：<a :href="'mailto:'+ record.cooperateEmail">{{ record.cooperateEmail }}</a>
+                    <br>电话：{{ record.telephone }}
+                    <br>手机：{{ record.mobile }}
+                    <br>QQ：{{ record.qq }}
+                </p>
+                <p class="uk-margin-large-top uk-text-center">
+                    <baidu-map></baidu-map>
+                    <!--<img :src="record.mapUrl">-->
+                </p>
+            </div>
+        </article>
     </div>
 
 </div>
@@ -45,6 +37,7 @@
 
 <script>
 import banner from '@/components/content/banner'
+import map from '@/components/content/map'
 
 import { mapState } from 'vuex'
 
@@ -55,7 +48,8 @@ export default {
         }
     },
     components: {
-        banner: banner
+        banner: banner,
+        baiduMap: map
     },
     created () {
         console.log("created contact")
@@ -77,6 +71,12 @@ export default {
 
 <style>
 .contact {
-    
+    background:#E5E5E5;
+}
+.contact h1{
+    color: #fff;
+}
+.contact .content{
+    padding: 60px 30px;
 }
 </style>

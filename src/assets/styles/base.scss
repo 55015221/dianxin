@@ -1,7 +1,7 @@
 @import 'normalize';
 @import 'animate.css';
 
-*{
+* {
   list-style: none;
 }
 
@@ -11,15 +11,16 @@ html {
 
 body {
   /*font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;*/
-  font-family: "Proxima Nova", "Helvetica Neue", Helvetica,"PingFang SC","Microsoft YaHei","微软雅黑", Arial, sans-serif;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-size: 14px;
   color: #444;
   background: #fff;
   line-height: 1.6;
   width: 100%;
   height: 100%;
-  transition:all .3s ease;
+  transition: all .3s ease;
 }
+
 a {
   color: #019bf0;
   background: transparent;
@@ -28,4 +29,21 @@ a {
   cursor: pointer;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
+}
+.uk-container{
+  max-width: 1200px;
+}
+.wrapper{
+  min-height: 650px;
+}
+
+.template-wrapper {
+
+}
+
+.main-raised {
+  margin-top: -60px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
 }

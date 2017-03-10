@@ -1,10 +1,8 @@
 <template v-if="style">
 
-    <div
-        id="banner"
-        class="uk-vertical-align"
+    <div class="banner"
         v-bind:style="style">
-        <div class="uk-container uk-vertical-align-middle">
+        <div class="uk-container uk-container-center">
             <slot></slot>
         </div>
     </div>
@@ -24,22 +22,11 @@ export default {
 
         }
     }
-
 }
 
 </script>
 
 
 <style>
-
-#banner {
-    color:#f8f8f8;
-    font-size:18px;
-    display: block;
-}
-#banner h2{
-    font-size:30px;
-    color:#f8f8f8;
-}
 
 </style>

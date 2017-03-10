@@ -4,7 +4,8 @@
   "data":{
     "menuList":[
       {"label": "导航一", "link": "/index"},
-      {"label": "导航三", "link": "/service"}
+      {"label": "导航三", "link": "/service"},
+      {"label": "联系我们", "link": "/contact"}
     ],
     "menuList1":[
       {"label": "首页", "link": "/index"},
@@ -94,7 +95,7 @@
       }
     ],
     "contact": {
-        "background":"height:200px;background:#3dc0f1;",
+        "background":"height:300px;background:#03a9f4;",
         "company":"深圳市典信科技有限公司",
         "address":"深圳市龙龙岗区大运软件小镇54栋306",
         "serviceEmail": "service@basicredit.com",

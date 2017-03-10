@@ -2,16 +2,14 @@
 
     <div id="app">
 
-        <!--header 头部-->
+        <!--header 头部
         <keep-alive>
             <app-header></app-header>
-        </keep-alive>
-
+        </keep-alive>-->
 
         <!--wrapper 主体-->
-        <div class="wrapper">
+        <main class="wrapper">
             <transition
-                name="custom-classes-transition"
                 enter-class=""
                 enter-active-class="animated fadeIn"
                 leave-class=""
@@ -19,7 +17,7 @@
                 >
                 <router-view></router-view>
             </transition>
-        </div>
+        </main>
 
         <!--header 底部
         <keep-alive>
@@ -61,17 +59,5 @@ export default {
 #app {
 
 }
-.uk-container{
-  max-width: 1200px;
-  padding: 0 35px;
-}
-.wrapper{
-  min-height: 650px;
-}
-
-.template-wrapper {
-  padding: 120px 0;
-}
-
 
 </style>
