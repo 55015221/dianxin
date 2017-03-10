@@ -77,6 +77,6 @@ export default {
     color: #fff;
 }
 .contact .content{
-    padding: 60px 30px;
+
 }
 </style>

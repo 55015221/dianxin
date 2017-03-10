@@ -80,6 +80,20 @@ const actions = {
         return response.data.questions
     },
     /**
+     * 获取关于我们数据
+     */
+    getAbout({ commit }, payload){
+        commit(types.GET_CONTACT_PENDING)
+        setTimeout(function () {
+            if (response.code === 1000) {
+                commit(types.GET_CONTACT_SUCCESS, response.data.about)
+            } else {
+                commit(types.GET_CONTACT_FAILURE)
+            }
+        }, 500)
+        return response.data.about
+    },
+    /**
      * 获取幻灯片数据
      */
     getSlider({ commit }, payload){
