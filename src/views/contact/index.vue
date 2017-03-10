@@ -72,6 +72,7 @@ export default {
 <style>
 .contact {
     background:#E5E5E5;
+    padding-bottom:60px;
 }
 .contact h1{
     color: #fff;

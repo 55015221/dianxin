@@ -49,6 +49,7 @@ export default {
 <style>
 .about {
     background:#E5E5E5;
+    padding-bottom:60px;
 }
 .about p{
     margin-top:10px;

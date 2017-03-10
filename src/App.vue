@@ -2,10 +2,10 @@
 
     <div id="app">
 
-        <!--header 头部
+        <!--header 头部-->
         <keep-alive>
             <app-header></app-header>
-        </keep-alive>-->
+        </keep-alive>
 
         <!--wrapper 主体-->
         <main class="wrapper">
@@ -19,10 +19,10 @@
             </transition>
         </main>
 
-        <!--header 底部
+        <!--header 底部-->
         <keep-alive>
             <app-footer></app-footer>
-        </keep-alive>-->
+        </keep-alive>
         
 
     </div>
